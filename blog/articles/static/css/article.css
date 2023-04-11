@@ -1,0 +1,78 @@
+/* ------------------HOME PAGE TEMPLATE------------------ */
+
+body {    
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif; 
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.header img
+{
+    display: block; 
+    width: 318px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.archive
+{
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one-post a
+{
+    color: #ffffff;
+}
+
+.post-title
+{
+    font-weight: 600;
+    font-size: 35px;
+}
+        
+.article-author 
+{ 
+    width: 83%; 
+    float: left;
+}
+
+.article-created-date 
+{ 
+    text-align: right;
+}
+
+
+
+/* ------------------ARTICLE TEMPLATE------------------ */
+.article
+{
+    padding-left: 4%;
+    width: 80%;
+}
+
+.article-text
+{
+    font-size: 25px;
+}
+
+.article-back a
+{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 30px;
+    padding-left: 81%;
+    
+}
+
+.header-article img
+{
+    padding-left: 4%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+/* ------------------FORM STYLE------------------ */

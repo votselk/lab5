@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Архив</title>
+        <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/article.css">
+    </head>
+    <body class="archive">
+		<div class = "header">
+			<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn3.emoji.gg%2Femojis%2F6276-spinning-cat.gif&f=1&nofb=1&ipt=8c0aacbba35724c8d27ffeae42ac812ed826cebb66833b6731e241f634b78e4b&ipo=images" style="width: 300px; height: 300px;">
+		</div>
+        {% for post in posts %}
+        <div class="one-post">
+            <a href="article/{{post.id}}" class="post-title">{{ post.title }}</a>
+            <div class="article-info">
+                <div class="article-author">Author: {{ post.author.username }}</div>
+                <div class="article-created- date">{{ post.created_date }}</div> <br>
+            </div>
+                <p class="article-text">{{ post.get_excerpt }}</p>
+        </div> <br> <br>
+        {% endfor %}
+    </body>
+</html>

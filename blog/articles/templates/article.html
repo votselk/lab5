@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{post.title}}</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/article.css">
+</head>
+<body class="article" style="align-content: center;">
+    <div class = "header-article">
+        
+        <p class="article-back"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn3.emoji.gg%2Femojis%2F6276-spinning-cat.gif&f=1&nofb=1&ipt=8c0aacbba35724c8d27ffeae42ac812ed826cebb66833b6731e241f634b78e4b&ipo=images" style="width: 300px; height: 300px;"><a href="/">Все статьи</a></p>
+    </div>
+    <div class="one-post">
+        <h2 class="post-title">{{ post.title }}</h2>
+        <div class="article-info">
+            <div class="article-author">Author: {{ post.author.username }}</div>
+            <div class="article-created- date">{{ post.created_date }}</div>
+        </div>
+            <p class="article-text">{{ post.text }}</p>
+    </div>
+</body>
+</html>
